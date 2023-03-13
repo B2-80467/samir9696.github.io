@@ -1,0 +1,51 @@
+/* Style for the navbar container */
+#nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+  }
+  
+  /* Style for the navbar links */
+  .nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Style for the active link */
+  .nav-link.active {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  /* Style for the hamburger menu icon in mobile view */
+  .hamburger {
+    display: none;
+    cursor: pointer;
+    padding: 1rem;
+    margin-right: 1rem;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    /* Style for the hamburger menu icon in mobile view */
+    .hamburger {
+      display: block;
+    }
+  
+    /* Style for the navbar links in mobile view */
+    #nav-menu.active .nav-link {
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding: 0.5rem 0;
+    }
+  }
+  
+  
